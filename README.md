@@ -1,10 +1,34 @@
 Soal Praktikum Pemrograman Lanjut IF-E 2016 BAB VI (Inheritance)
 ===  
 ####Soal 
-
-
+Buatlah sebuah kelas Distributor yang memiliki atribut nama, nomor ID, nama unit, harga barang, jumlahTerjual dan totalPendapatan beserta method untuk mengeset dan mengakses nilainya. Buat kelas Wholesaler dan Retailer yang merupakan turunan dari kelas Pedagang.  
 ####Ketentuan :
-
+- Pada kelas Wholesaler, memiliki atribut tambahan bonus.
+- Wholesaler memperoleh bonus Rp 250.000,00 setiap 1000 barang yang terjual.
+- Pada kelas Retailer, memiliki atribut tambahan diskon.
+- Retailer memperoleh diskon 5% dari jumlah penjualan.
+- Tampilkan nama, id pedagang dan totalPendapatan dari tiap-tiap pedagang.
+Contoh tampilan :
+```
+====================================
+	Nama	: Ismail M.
+	ID	: 1234
+	Unit	: Distributor
+	Total Pendapatan : 200000000
+====================================
+====================================
+	Nama	: Ilham T.
+	ID	: 1234
+	Unit	: Wholesaler
+	Total Pendapatan : 15000000
+====================================
+====================================
+	Nama	: Ilyas M.
+	ID	: 9876
+	Unit	: Retailer
+	Total Pendapatan : 2000000
+====================================
+```
 
 ####Cara pengerjaan :
 
