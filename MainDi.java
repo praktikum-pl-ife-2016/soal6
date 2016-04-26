@@ -1,20 +1,38 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package bab6;
-
-/**
- *
- * @author JERRY
- */
-public class MainDi {
-     public static void main(String[] args) {
-        Distributor objek1 = new Distributor ("Jerry", "7676", "Distributor", 2000, 100);
-        objek1.display();
-        Wholesaler objek2 = new Wholesaler ("Eko", "8594", "Wholesaler", 2000, 100);
-        objek2.display();
-        Retailer objek3 = new Retailer ("Widianto", "7856", "Retailer", 2000, 100);
-        objek3.display();
-}}
+public class Main {
+    public static void main(String[] args) {
+        
+        Wholesaler grosir = new Wholesaler ("Rudi",1234,"Wholesaler",10000,2000);
+        grosir.setBonus();
+        grosir.setTotalPendapatan();
+        
+        Retailer eceran = new Retailer ("Steve",1232,"Retailer",5000,1000);
+        eceran.setDiskon();
+        eceran.setTotalPendapatan();
+        
+        Distributor agen = new Distributor ("Darma",1122,"Distributor",4000,5000);
+        agen.setTotalPendapatan();
+        
+        System.out.println("===============================================");
+        System.out.println ("Nama             : "+grosir.getNama());
+        System.out.println ("ID               : "+grosir.getNomorID());
+        System.out.println ("Unit             : "+grosir.getUnit());
+        System.out.println ("Total Pendapatan : "+grosir.getTotalPendapatan());
+        System.out.println("===============================================");
+        
+        System.out.println("===============================================");
+        System.out.println ("Nama             : "+eceran.getNama());
+        System.out.println ("ID               : "+eceran.getNomorID());
+        System.out.println ("Unit             : "+eceran.getUnit());
+        System.out.println ("Total Pendapatan : "+eceran.getTotalPendapatan());
+        System.out.println("===============================================");
+        
+        System.out.println("===============================================");
+        System.out.println ("Nama             : "+agen.getNama());
+        System.out.println ("ID               : "+agen.getNomorID());
+        System.out.println ("Unit             : "+agen.getUnit());
+        System.out.println ("Total Pendapatan : "+agen.getTotalPendapatan());
+        System.out.println("===============================================");
+        
+    }
+    
+}
