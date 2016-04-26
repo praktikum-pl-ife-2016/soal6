@@ -1,5 +1,5 @@
 Data Diri
 ===
-Nama :   
-NIM :  
-Kelas :
+Nama :   FEBRIANA RANTA LIDYA
+NIM :  155150207111037
+Kelas : IF-E
