@@ -1,0 +1,9 @@
+public class mainDistributor {
+     public static void main(String[] args) {
+     Distributor d1 = new Distributor("Goddesses","Distributor","111222",1000,2000);
+     d1.display();
+     Wholesaler w1= new Wholesaler("HailRussia","Wholesaler","66666",1111,111);
+     w1.display();
+     Retailer r1 = new Retailer("Putin","Retailer","J111",2222,2222);
+     r1.display();   
+     }
