@@ -1,0 +1,14 @@
+public class Retailer extends Distributor{
+    
+    private double discount;
+
+    public Retailer(String nama, String ID, String unit, int harga, int jumlahTerjual, int totalpendapatan) {
+        super(nama, ID, unit, harga, jumlahTerjual, totalpendapatan);
+        
+          discount = 0.05 * super.getTotalpendapatan();
+          getTotal();
+    }
+ 
+    public final int getTotal() {
+    return (int) (super.getTotalpendapatan() + discount);
+    }
