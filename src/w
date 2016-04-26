@@ -1,0 +1,18 @@
+public class Wholesaler extends Distributor {
+
+    private double bonus;
+    
+    public Wholesaler(String nama, String ID, String unit, int harga, int jumlahTerjual, int totalpendapatan) {
+        super(nama, ID, unit, harga, jumlahTerjual, totalpendapatan);
+    
+        bonus = (250000 * super.getJumlahTerjual() / 1000);
+    }
+    public int getTotalSemua() {
+        if (super.getJumlahTerjual() >= 1000) {
+            return (int) (super.getTotalpendapatan() + (int) bonus);
+        } else {
+            return (int) super.getTotalpendapatan();
+        }
+ 
+    
+}
