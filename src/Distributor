@@ -1,0 +1,83 @@
+public class Distributor {
+    private String nama;
+    private String ID;
+    private String unit;
+    int harga;
+    private int jumlahTerjual;
+    int totalpendapatan;
+    
+    Distributor (
+            String nama, 
+            String ID,
+            String unit,
+            int harga,
+            int jumlahTerjual,
+            int totalpendapatan){
+    this.nama=nama;
+    this.ID=ID;
+    this.unit=unit;
+    this.harga= harga;
+    this.jumlahTerjual= jumlahTerjual;
+    this.totalpendapatan= totalpendapatan;
+       
+    
+    }
+
+    void setNama(String nama){
+    this.nama= nama;
+    }
+    
+    void setID(String ID){
+    this.ID=ID;
+    }
+    
+    void setUnit(String unit){
+    this.unit = unit;
+    }
+    
+    void setHarga(int harga){
+    this.harga=harga;
+    }
+    
+    void setJumlahTerjual(int jumlahTerjual){
+    this.jumlahTerjual=jumlahTerjual;
+    }
+    
+    void setTotalpendapatan(int totalpendapatan){
+    this.totalpendapatan=totalpendapatan;
+    }
+    
+    
+    String getNama(){
+    return nama;
+    }
+    
+    String getID(){
+    return ID;
+    }
+    
+    String getUnit(){
+    return unit;
+    }
+    
+    int getHarga(){
+    return harga;
+    }
+    
+    int getJumlahTerjual(){
+    return jumlahTerjual;
+    }
+    
+    int getTotalpendapatan(){
+    return totalpendapatan = jumlahTerjual*harga;
+    }
+  public void displaymessage() {
+    System.out.println("=========================================");
+    System.out.println("Nama\t\t: " + getNama());
+    System.out.println("ID\t\t: " + getID());
+    System.out.println("Unit\t\t: " + getUnit());
+    System.out.println("Total Pendapatan\t: " + getTotalpendapatan());
+    System.out.println("=========================================");
+     } 
+    
+}
