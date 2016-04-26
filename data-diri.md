@@ -1,5 +1,5 @@
 Data Diri
 ===
-Nama :   
-NIM :  
-Kelas :
+Nama :   MOHAMAD MAHENDRA
+NIM :  155150207111034
+Kelas : TIF - E
