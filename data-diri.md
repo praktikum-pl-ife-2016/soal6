@@ -1,5 +1,5 @@
 Data Diri
 ===
-Nama :   
-NIM :  
-Kelas :
+Nama	: Peitra Erdi
+NIM	: 155150200111065
+Kelas	: IF-E
