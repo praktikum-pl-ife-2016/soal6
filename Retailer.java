@@ -1,19 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package bab6;
-
-/**
- *
- * @author JERRY
- */
 public class Retailer extends Distributor {
-    public Retailer(String nama, String ID, String unit, int jumlah, int harga) {
-        super(nama, ID, unit, jumlah, harga);
+    private int diskon;
+
+    public Retailer(String nama, int nomorID, String unit, int hargaBarang, int jumlahTerjual) {
+        super(nama, nomorID, unit, hargaBarang, jumlahTerjual);
+        
+        
     }
-     public int totalPen(){
-        return (super.getHarga()*super.getJumlah()) + (super.getHarga()*super.getJumlah())* 5/100;
+    public void setDiskon (){
+     diskon = (int) (hargaBarang*jumlahTerjual*0.05);
+        
+    } 
+        public double getDiskon (){
+     return diskon;       
+        
+        }
+        public void setTotalPendapatan (){
+            totalPendapatan = diskon+(hargaBarang*jumlahTerjual);
+        
+        }
+        public int getTotalPendapatan (){
+            return totalPendapatan;
+        }
+    
     }
-}
