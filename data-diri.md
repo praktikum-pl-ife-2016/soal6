@@ -1,5 +1,5 @@
 Data Diri
 ===
-Nama :   
-NIM :  
-Kelas :
+Nama :   RIZAL FAHTURRIZQI
+NIM :  155150201111081
+Kelas :TIF - E
