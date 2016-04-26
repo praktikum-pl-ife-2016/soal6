@@ -1,27 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package bab6;
-
-/**
- *
- * @author JERRY
- */
 public class Wholesaler extends Distributor {
-    int bonus, total, x;
+    private int bonus;
 
-    public Wholesaler(String nama, String ID, String unit, int jumlah, int harga) {
-        super(nama, ID, unit, jumlah, harga);
+    public Wholesaler(String nama, int nomorID, String unit, int hargaBarang, int jumlahTerjual) {
+        super(nama, nomorID, unit, hargaBarang, jumlahTerjual);
+        
+        
     }
-
-
-
-    public int totalPen() {
-        if (super.getJumlah() > 1000){
-        x = super.getJumlah() / 1000;
-        total =  (super.getHarga() * super.getJumlah()) + (250000 * x);}
-        return total;
+    public void setBonus (){
+     
+        if (jumlahTerjual>1000)
+            bonus=(jumlahTerjual/1000)*250;
+    else
+    bonus=0;
+    } 
+        public double getBonus (){
+     return bonus;       
+        
+        }
+        public void setTotalPendapatan (){
+            totalPendapatan = bonus+(hargaBarang*jumlahTerjual);
+        
+        }
+        public int getTotalPendapatan (){
+            return totalPendapatan;
+        }
+    
     }
-}
